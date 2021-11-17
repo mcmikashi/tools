@@ -1,0 +1,33 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+section{
+    padding: 2%;
+}
+
+.container{
+    width: 100%;
+    display: inline-flex;
+    gap: 15px;
+}
+.grand-titre{
+    text-align: center;
+}
+#gauche-section{
+    background-color: antiquewhite;
+    width: 20%;
+}
+#centre-section{
+    background-color:aquamarine;
+    width: 20%;
+}
+#droite-section{
+    background-color:red;
+    width: 60%;
+}
+.mini{
+    background-color: cornsilk;
+    border: solid 1px rgb(21, 77, 99);
+}
