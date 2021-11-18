@@ -20,25 +20,29 @@
             </div>
             <div>
                 <form id="multiple-element-form">
-                    <label for="multiple-textarea">Ajout multiple </label>
-                    <textarea name="multiple-textarea" id="multiple-textarea" cols="30" rows="10"></textarea>
-                    <input type="submit">
+                    <div class="center-flex">
+                        <label for="multiple-textarea">Ajout multiple </label>
+                        <textarea name="multiple-textarea" id="multiple-textarea" cols="30" rows="10"></textarea>
+                        <label for="things-input">Equipe</label>
+                        <div>
+                            <input type="radio" name="equipe-radio" id="radio-equipe-oui" value="1" >
+                            <label for="radio-equipe-oui"> Oui</label>
+                            <input type="radio" name="equipe-radio" id="radio-equipe-non" checked value="0">
+                            <label for="radio-equipe-oui">Non</label>
+                        </div>
+                        <div>
+                            <label for="nombre-equipe-input">Nombre</label>
+                            <input type="number" name="nombre-equipe" id="nombre-equipe-input">
+                        </div>
+                        <div>
+                            <button id="envoyer_form" class="red" type="button">envoyer</button>
+                            <button id="effacer-form" class="blue" type="button">effacer</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
-        <section id="centre-section">
-            <form>
-                <label for="things-input">Equipe</label>
-                <div>
-                    <input type="radio" name="equipe-radio" id="radio-equipe-oui" value="oui" >
-                    <label for="radio-equipe-oui"> Oui</label>
-                    <input type="radio" name="equipe-radio" id="radio-equipe-non" value="non">
-                    <label for="radio-equipe-oui">Non</label>
-                </div>
-            </form>
-        </section>
         <section id="droite-section">
-            
         </section>
     </div>
     <script src="js/ramdom.js"></script>
