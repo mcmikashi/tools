@@ -8,20 +8,13 @@
     <title>Random</title>
 </head>
 <body>
-    <h2 class="grand-titre">Random</h2>
+    <h1 class="grand-titre">Creation d'equipe ou de personne aléatoire</h1>
     <div class="container">
         <section id="gauche-section">
             <div>
-<!--                 <form>
-                    <label for="things-input">Ajout un éléments</label>
-                    <input type="text" name="things-input" id="things-input">
-                    <input type="submit">
-                </form> -->
-            </div>
-            <div>
                 <form id="multiple-element-form">
                     <div class="center-flex">
-                        <label for="multiple-textarea">Ajout multiple </label>
+                        <label for="multiple-textarea">Ajout multiple (séparer par une virgule) </label>
                         <textarea name="multiple-textarea" id="multiple-textarea" cols="30" rows="10"></textarea>
                         <label for="things-input">Equipe</label>
                         <div>
@@ -30,13 +23,13 @@
                             <input type="radio" name="equipe-radio" id="radio-equipe-non" checked value="0">
                             <label for="radio-equipe-oui">Non</label>
                         </div>
-                        <div>
+                        <div class="center-flex">
                             <label for="nombre-equipe-input">Nombre</label>
-                            <input type="number" name="nombre-equipe" id="nombre-equipe-input">
+                            <input type="number" name="nombre-equipe" id="nombre-equipe-input" min="2" value="2">
                         </div>
-                        <div>
-                            <button id="envoyer_form" class="red" type="button">envoyer</button>
-                            <button id="effacer-form" class="blue" type="button">effacer</button>
+                        <div class="center-flex">
+                            <button id="envoyer_form" class="blue" type="button">Ajouter</button>
+                            <button id="effacer-form" class="red" type="button">Effacer</button>
                         </div>
                     </div>
                 </form>
