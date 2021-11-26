@@ -1,13 +1,12 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#checkBoxEquipe{
+    width: 4em;
+    height: 20px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes addListe {
+    0% {background-position: #198754;}
+    50% { background: #8cc3a9; }
+    100% {background-color: #ffffff;}
+}
+.bgAnimationRed{
+    animation: 1.5s ease-in 0.1s 1 normal addListe;
 }
