@@ -10,3 +10,6 @@
 .bgAnimationRed{
     animation: 1.5s ease-in 0.1s 1 normal addListe;
 }
+.hauteurColone{
+    min-height: 75vh;
+}
