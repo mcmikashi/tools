@@ -1,3 +1,4 @@
+/* CSS du component RTOPT */
 #checkBoxEquipe{
     width: 4em;
     height: 20px;
@@ -12,4 +13,12 @@
 }
 .hauteurColone{
     min-height: 75vh;
+}
+/* CSS du component calculatrice */
+.affichageCalculatriceTemp{
+    height: 50px;
+    font-size: 2em;
+}
+.affichageCalculatricePrecedent{
+    height: 25px;
 }
