@@ -31,16 +31,30 @@ class Calculatrice extends React.Component{
       lastNums:null
     })
   } 
+  addPosiNegatif  = () => {
+    let tempotemp = this.state.tempArr
+    console.log(this.state.tempArr)
+    if (this.state.tempArr[0]==='-') {
+      tempotemp.shift()
+    }else{
+      tempotemp.unshift('-')
+    }
+    this.setState({
+      tempArr: [...tempotemp]
+    })
+  }
   addSigne = (signe) => {
     let tempoString = this.state.tempArr.join("")
     if (this.state.arr.length>=2){
       this.equalElements(signe)
+    }else if(this.state.tempArr.length===0 && signe==='-'){
+      this.setState({tempArr: ["-"]})
     }else{
       this.setState({
         arr:[...this.state.arr,tempoString,signe],
         tempArr: []})
-      }
     }
+  }
   equalElements = (signe=null) => {
     if (this.state.arr.length===2) {
       let tempoCalcule = 0;
@@ -116,7 +130,7 @@ class Calculatrice extends React.Component{
               </div>
               <div className="col-3">
                 <div className="d-grid">
-                  <button className="btn btn-light" type="button">%</button>
+                  <button className="btn btn-light" type="button" onClick={(e) => this.addPosiNegatif()}>±</button>
                 </div>
               </div>
             </div>
